@@ -8,6 +8,6 @@ import (
 func main() {
 	r := gin.Default()
 	r.GET("/ping", controller.Ping)
-	r.GET("/api/user/rigister", controller.Register)
+	r.GET("/api/user/register", controller.Register)
 	r.Run()
 }
