@@ -1,13 +1,9 @@
 package main
 
 import (
-	"github.com/gin-gonic/gin"
-	"github.com/huanggengzhong/shuwen-gin-vue/controller"
+	"github.com/huanggengzhong/shuwen-gin-vue/router"
 )
 
 func main() {
-	r := gin.Default()
-	r.GET("/ping", controller.Ping)
-	r.GET("/api/user/register", controller.Register)
-	r.Run()
+	router.Run()
 }
