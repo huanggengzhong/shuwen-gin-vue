@@ -6,7 +6,7 @@ b站地址:https://www.bilibili.com/video/BV12r4y1w7Vr/?spm_id_from=333.788.reco
 2023年03月21日14:02:35 备忘录:
 https://www.bilibili.com/video/BV12r4y1w7Vr?p=3&vd_source=df3b7ca79ea2e3d34de8f4506bb98c45
 
-看到22分处;
+看到28分处;
 
 # 庚中 安装说明
 版本号:mysql-8.0.30-winx64
@@ -25,7 +25,7 @@ quit;
 net start/stop mysql
 
 //进入mysql控制台命令密码填123456
-mysql uroot -p
+mysql -uroot -p
 //退出mysql
 quit;
 
