@@ -1,0 +1,9 @@
+	server:
+    port:"3306"
+  db:
+   hostname:localhost
+   dbname:shuwen-gin-vue
+	 username:shuwen-gin-vue
+	 password:123456
+  
+ 
