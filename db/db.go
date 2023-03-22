@@ -14,5 +14,15 @@ func InitDB() *gorm.DB {
 	username := "shuwen-gin-vue"
 	password := "123456"
 	charset := "utf8"
-	args := fmt.Sprintf("打印参数%s:%s:%s:%s:%s")
+	args := fmt.Sprintf("打印参数%s:%s:%s:%s:%s", driverName, host, port, database, username, password, charset)
+	db, err := gorm.Open(driverName, args)
+	if err != nil {
+		panic("链接数据库失败:" + err.Error())
+	}
+	return db
+}
+
+func Run() {
+	db := InitDB()
+	defer db.Close()
 }
